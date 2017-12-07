@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<riviera-workspace-user>
+    <plugins>
+        <plugin name="simulation_controller">
+            <settings>
+                <breakpoints/>
+            </settings>
+        </plugin>
+        <plugin name="vsimgui">
+            <settings>
+                <run_for_time time="100ns"/>
+            </settings>
+        </plugin>
+    </plugins>
+    <documents/>
+</riviera-workspace-user>

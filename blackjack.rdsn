@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<riviera-design>
+    <version value="2017.10.61.6729"/>
+    <configurations>
+        <configuration name="optimized"/>
+        <configuration name="debug"/>
+    </configurations>
+    <properties>
+        <configuration name="debug">
+            <compilation>
+                <cpp>
+                    <application>
+                        <systemc value="true"/>
+                    </application>
+                    <compiler-type value="0"/>
+                    <generate-debug-information value="true"/>
+                    <output-file value="./debug/libmodules"/>
+                </cpp>
+                <verilog>
+                    <generate-debug-information value="true"/>
+                </verilog>
+                <vhdl>
+                    <generate-debug-information value="true"/>
+                </vhdl>
+            </compilation>
+            <global>
+                <intermediate-dir value="./debug"/>
+            </global>
+            <library>
+                <active-library value="blackjack"/>
+                <simulated-library value="blackjack"/>
+                <simulated-modules value="V_BJACK_tb;"/>
+            </library>
+            <simulation>
+                <general>
+                    <enable-cdebug value="true"/>
+                    <enable-debug value="true"/>
+                </general>
+            </simulation>
+        </configuration>
+        <configuration name="optimized">
+            <compilation>
+                <cpp>
+                    <application>
+                        <systemc value="true"/>
+                    </application>
+                    <compiler-type value="0"/>
+                    <generate-debug-information value="false"/>
+                    <output-file value="./optimized/libmodules"/>
+                </cpp>
+                <verilog>
+                    <generate-debug-information value="false"/>
+                </verilog>
+                <vhdl>
+                    <generate-debug-information value="false"/>
+                </vhdl>
+            </compilation>
+            <global>
+                <intermediate-dir value="./optimized"/>
+            </global>
+            <library>
+                <active-library value="blackjack"/>
+                <simulated-library value="blackjack"/>
+                <simulated-modules value="V_BJACK_tb;"/>
+            </library>
+            <simulation>
+                <general>
+                    <access>
+                        <enable-read value="true"/>
+                        <read-modules value=""/>
+                        <read-paths value=""/>
+                    </access>
+                </general>
+                <verilog>
+                    <slp>
+                        <enable value="true"/>
+                    </slp>
+                </verilog>
+            </simulation>
+        </configuration>
+    </properties>
+    <structure>
+        <directory name="VHDL">
+            <file path="src/gates.vhd"/>
+        </directory>
+        <directory name="Verilog">
+            <file path="src/v_bjack.v"/>
+            <file path="src/bcd2led.v"/>
+            <file path="src/bin2bcd.v"/>
+            <file path="src/bjack_c.v"/>
+            <file path="src/gates.v"/>
+            <file path="src/gen.v"/>
+            <file path="src/johnson8.v"/>
+            <file path="src/mux.v"/>
+            <file path="src/tb.v"/>
+        </directory>
+        <directory name="SystemC">
+            <file path="src/systemc/bcd2led.cpp"/>
+            <file path="src/systemc/bcd2led.hpp"/>
+            <file path="src/systemc/bcd2led_v_foreign.hpp"/>
+            <file path="src/systemc/inv.cpp"/>
+            <file path="src/systemc/inv.hpp"/>
+            <file path="src/systemc/inv_vhd_foreign.hpp"/>
+            <file path="src/systemc/johnson8.cpp"/>
+            <file path="src/systemc/johnson8.hpp"/>
+            <file path="src/systemc/johnson8_v_foreign.hpp"/>
+            <file path="src/systemc/or2.cpp"/>
+            <file path="src/systemc/or2.hpp"/>
+            <file path="src/systemc/or2_vhd_foreign.hpp"/>
+        </directory>
+        <file path="src/project_runme.do"/>
+        <file path="src/variables.do"/>
+    </structure>
+    <dependencies/>
+</riviera-design>

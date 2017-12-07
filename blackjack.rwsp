@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE riviera-workspace>
+<riviera-workspace>
+    <version value="2017.10.61.6729"/>
+    <active-design name="blackjack"/>
+    <active-configuration name="debug"/>
+    <designs>
+        <design path="blackjack.rdsn"/>
+    </designs>
+    <dependencies/>
+    <configurations>
+        <configuration name="optimized">
+            <design name="blackjack" configuration="optimized"/>
+        </configuration>
+        <configuration name="debug">
+            <design name="blackjack" configuration="debug"/>
+        </configuration>
+    </configurations>
+</riviera-workspace>
