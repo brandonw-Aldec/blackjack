@@ -5,7 +5,7 @@
 # $Revision: 135800 $
 
 # set project working directory
-cd C:/"Program Files (x86)"/Jenkins/workspace/blackjack
+cd "C:/Program Files (x86)"/Jenkins/workspace/blackjack"
 
 # load procedures and variables
 source $aldec/examples/commonscripts/procedures.do
