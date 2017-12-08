@@ -32,5 +32,7 @@ logOrWave $signalList
 # advance simulation
 run $runTime
 
+echo done
+
 # uncomment following line to terminate simulation automatically from script
 #endsim
