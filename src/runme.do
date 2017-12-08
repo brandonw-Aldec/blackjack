@@ -5,7 +5,7 @@
 # $Revision: 135800 $
 
 # set project working directory
-cd $aldec/examples/mixed_language/blackjack
+#cd $aldec/examples/mixed_language/blackjack
 
 # load procedures and variables
 source $aldec/examples/commonscripts/procedures.do
