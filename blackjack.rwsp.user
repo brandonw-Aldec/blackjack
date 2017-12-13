@@ -12,5 +12,18 @@
             </settings>
         </plugin>
     </plugins>
-    <documents/>
+    <documents>
+        <document file="src/tb.v" is_docked="1" type="verilog">
+            <settings>
+                <cursor line="0" column="0"/>
+                <code_analysis enabled="1"/>
+            </settings>
+        </document>
+        <document file="src/project_runme.do" is_docked="1" type="macro">
+            <settings>
+                <cursor line="0" column="0"/>
+                <code_analysis enabled="1"/>
+            </settings>
+        </document>
+    </documents>
 </riviera-workspace-user>
