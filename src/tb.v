@@ -28,7 +28,7 @@ integer res_file;
 
 initial
 begin
-	$display ("I have modified the testbench.");
+	
     res_file = $fopen ("results.txt");
     $fdisplay (res_file, "Inputs: NEW_CARD GEN_RES START GEN_CLK SYS_CLK\n");
     $fdisplay (res_file, "Outputs: D_L D_H BUST HOLD L_L L_H LEDS\n");
